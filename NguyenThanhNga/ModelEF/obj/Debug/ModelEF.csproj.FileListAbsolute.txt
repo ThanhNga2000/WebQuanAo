@@ -1,0 +1,16 @@
+D:\Documents\Visual Studio 2019\C#LT\NguyenThanhNga\ModelEF\bin\Debug\ModelEF.dll.config
+D:\Documents\Visual Studio 2019\C#LT\NguyenThanhNga\ModelEF\bin\Debug\ModelEF.dll
+D:\Documents\Visual Studio 2019\C#LT\NguyenThanhNga\ModelEF\bin\Debug\ModelEF.pdb
+D:\Documents\Visual Studio 2019\C#LT\NguyenThanhNga\ModelEF\bin\Debug\EntityFramework.dll
+D:\Documents\Visual Studio 2019\C#LT\NguyenThanhNga\ModelEF\bin\Debug\EntityFramework.SqlServer.dll
+D:\Documents\Visual Studio 2019\C#LT\NguyenThanhNga\ModelEF\bin\Debug\EntityFramework.xml
+D:\Documents\Visual Studio 2019\C#LT\NguyenThanhNga\ModelEF\bin\Debug\EntityFramework.SqlServer.xml
+D:\Documents\Visual Studio 2019\C#LT\NguyenThanhNga\ModelEF\obj\Debug\ModelEF.csprojAssemblyReference.cache
+D:\Documents\Visual Studio 2019\C#LT\NguyenThanhNga\ModelEF\obj\Debug\ModelEF.csproj.CoreCompileInputs.cache
+D:\Documents\Visual Studio 2019\C#LT\NguyenThanhNga\ModelEF\obj\Debug\ModelEF.csproj.CopyComplete
+D:\Documents\Visual Studio 2019\C#LT\NguyenThanhNga\ModelEF\obj\Debug\ModelEF.dll
+D:\Documents\Visual Studio 2019\C#LT\NguyenThanhNga\ModelEF\obj\Debug\ModelEF.pdb
+D:\Documents\Visual Studio 2019\C#LT\NguyenThanhNga\ModelEF\bin\Debug\PagedList.dll
+D:\Documents\Visual Studio 2019\C#LT\NguyenThanhNga\ModelEF\bin\Debug\PagedList.Mvc.dll
+D:\Documents\Visual Studio 2019\C#LT\NguyenThanhNga\ModelEF\bin\Debug\PagedList.xml
+D:\Documents\Visual Studio 2019\C#LT\NguyenThanhNga\ModelEF\bin\Debug\PagedList.Mvc.xml

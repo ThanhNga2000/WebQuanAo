@@ -1,0 +1,74 @@
+﻿@model  List<ModelEF.Model.Product>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_layout.cshtml";
+}
+
+
+<style>
+    #customers {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 50%;
+        margin: auto;
+    }
+
+        #customers td, #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        #customers tr:nth-child(even) {
+            background-color: #01DF01;
+        }
+
+        #customers tr:hover {
+            background-color: #01DFD7;
+        }
+
+        #customers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: center;
+            background-color: #DF013A;
+            color: white;
+        }
+</style>
+<h3>Sản phẩm</h3>
+<table id="customers">
+    <tr>
+        <th>ID</th>
+        <th>Tên sản phẩm</th>
+        <th>Gía bán</th>
+        <th>Số lượng</th>
+        <th>Hình ảnh</th>
+        <th>Mô tả</th>
+        <th>Trạng thái</th>
+        <th colspan="2"></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>@item.ID</td>
+    <td>@item.Name</td>
+    <td>@item.UnitCost</td>
+    <td>@item.Quantity</td>
+    <td><img src="/Assets/TrangChu/images/@item.Image" style="width:55px;height:62px" /></td>
+    <td>@item.Description</td>
+    <td>@item.Status</td>
+    <th colspan="1">
+        <a href="@Url.Action("Create","Product",new {id= item.ID })"><img src="~/Assets/TrangChu/images/iconadd.png" style="margin:auto;width:40px;height:30px;" /></a>
+    </th>
+    <th colspan="1">
+        <a href="@Url.Action("Details","Product",new {id= item.ID })"><img src="~/Assets/TrangChu/images/seen.png" style="margin:auto;width:40px;height:30px;" /></a>
+    </th>
+
+</tr>
+    }
+
+
+</table>
+
+

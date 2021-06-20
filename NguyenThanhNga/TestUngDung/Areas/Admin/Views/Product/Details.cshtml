@@ -1,0 +1,57 @@
+﻿@model ModelEF.Model.Product
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_layout.cshtml";
+}
+
+<style>
+    input[type=text], select {
+        background: #E0F8F7;
+    }
+
+    td {
+        color: #FE2EC8;
+    }
+
+    input[type=number] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+</style>
+<script src="~/Assets/Admin/js/previewFile.js"></script>
+<h2>Chi tiết sản phẩm</h2>
+<form action="/Product/Details" method="post" style="width:50%;margin:auto;" class =" multipart/form-data">
+    <div class="form-group">
+        <label>Mã sản phẩm</label>
+        <input type="text" class="form-control" value="@Model.ID" id="ID" name="ID" readonly />
+    </div>
+    <div class="form-group">
+        <label>Tên sản phẩm</label>
+        <input type="text" class="form-control" value="@Model.Name" id="Name" name="Name" readonly />
+    </div>
+    <div class="form-group">
+        <label>Hình ảnh</label>
+        <input type="text" class="form-control" value="@Model.Image" id="Image" onchange="previewFile();" name="Image" />
+    </div>
+    <div class="form-group">
+        <label>Đơn giá</label>
+        <input type="text" class="form-control" value="@Model.UnitCost" id="UnitCost" name="UnitCost" readonly />
+    </div>
+    <div class="form-group">
+        <label>Số lượng</label>
+        <input type="text" class="form-control" value="@Model.Quantity" id="Quantity" name="Quantity" readonly />
+    </div>
+    <div class="form-group">
+        <label>Loại sản phẩm</label>
+        <input type="text" class="form-control" value="@Model.CategoryID" id="CategoryID" name="CategoryID" />
+    </div>
+</form>
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+
